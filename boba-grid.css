@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin-top: 3rem; }
+
+.l-wrap {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.grid-item {
+  width: 93.5px;
+  margin-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  float: left; }
+
+.l-main-content::after {
+  content: "";
+  clear: left;
+  display: block; }
+.l-main-content .l-one {
+  width: 12.5%;
+  margin-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  float: left; }
+.l-main-content .l-two {
+  width: 25%;
+  margin-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  float: left; }
+.l-main-content .l-four {
+  width: 50%;
+  margin-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  float: left; }
+
+.menu {
+  width: 3em;
+  height: 3em;
+  background: #ffff00;
+  position: relative; }
+  .menu .bit-1::before {
+    content: '';
+    left: 0.5em;
+    top: 0.5em;
+    position: absolute;
+    width: 1em;
+    transform-origin: left bottom;
+    height: 0.3em;
+    background: #202020;
+    transition: transform 0.3s, top 0.3s; }
+  .menu .bit-1::after {
+    content: '';
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    width: 1em;
+    transform-origin: right bottom;
+    height: 0.3em;
+    background: #202020;
+    transition: transform 0.3s, top 0.3s; }
+  .menu .bit-2 {
+    position: absolute;
+    width: 2em;
+    top: 50%;
+    left: 50%;
+    height: 0.3em;
+    background: #202020;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s 0.3s, width 0.3s 0.6s; }
+  .menu .bit-3::before {
+    content: '';
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    width: 1em;
+    transform-origin: left top;
+    height: 0.3em;
+    background: #202020;
+    transition: transform 0.3s, bottom 0.3s; }
+  .menu .bit-3::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 1em;
+    transform-origin: right top;
+    height: 0.3em;
+    background: #202020;
+    transition: transform 0.3s, bottom 0.3s; }
+
+.menu.open .bit-1::before {
+  top: 0.4em;
+  width: 1.2em;
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s; }
+.menu.open .bit-1::after {
+  top: 0.4em;
+  width: 1.2em;
+  transform: rotate(-45deg);
+  transform-origin: right bottom;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s; }
+.menu.open .bit-2 {
+  width: 0.3em;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: transform 0.3s 0.3s, width 0.3s; }
+.menu.open .bit-3::before {
+  bottom: 0.4em;
+  width: 1.2em;
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s; }
+.menu.open .bit-3::after {
+  bottom: 0.4em;
+  width: 1.2em;
+  transform: rotate(45deg);
+  transform-origin: right top;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s; }
+
+/*# sourceMappingURL=boba-grid.css.map */

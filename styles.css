@@ -1,0 +1,100 @@
+h1 {
+    font-family: "Verdana Pro Regular";
+    color: #202020;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    font-family: "Verdana Pro Bold";
+    font-weight: bold;
+    color: #202020;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #FFFF00;
+    height: 50px;
+}
+
+body {
+    color: #202020;
+    font-family: "New Rail Alphabet";
+}
+
+.title {
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 15;
+}
+
+.title p {
+    line-height: 48px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  text-align: center;
+  background: #ffff00;
+}
+
+.menu { 
+    transition: all .2s ease-in-out;
+    z-index: 15;
+}
+.menu:hover { transform: scale(1.24); }
+
+.cta-button { transition: all .2s ease-in-out; }
+.cta-button:hover { transform: scale(1.24); }
+
+.l-menu-opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32,32,32,0.97);
+    z-index: 10;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.menu-list {
+    margin-top: 25%;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 24px;
+}
+
+.menu-item:hover {
+    background: #ffff00;
+}
+
+.menu-item a {
+    font-family: "Verdana Pro Regular";
+    font-size: 48px;
+    color: white;
+    margin: 24px;
+}
+
+.menu-item:hover a{
+    color: #202020;
+}
