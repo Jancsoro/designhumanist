@@ -76,6 +76,7 @@ p {
 }
 
 .menu-list {
+    list-style-type: none;
     margin-top: 25%;
 }
 
