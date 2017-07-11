@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: 'Verdana Pro Bold';
-    src: url('Verdana Pro Bold.otf');
-    src: url('Verdana Pro Bold.otf') format('opentype');
+    font-family: 'Verdana Pro Regular';
+    src: url('Verdana Pro Regular.otf');
+    src: url('Verdana Pro Regular.otf') format('opentype');
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
 
 body {
     color: #202020;
-    font-family: "Verdana Pro Bold";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 32px;
 }
@@ -56,7 +56,6 @@ p {
     line-height: 32px;
     font-weight: 500;
     text-align: center;
-    font-family: "New Rail Alphabet";
     font-size: 14px;
 }
 

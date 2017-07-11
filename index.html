@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>design humanist</title>
-        <link rel="shortcut icon" href="images/designhumanist-favicon.svg"/>
+        <link rel="con" href="images/designhumanist-favicon.svg"/>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +29,7 @@
                 </div>
                 <div class="l-title">
                     <div class="title">
-                        <p>
                         <img class="logo" src="images/designhumanist-emblem-default.svg">
-                        </p>
                     </div>
                 </div>
             </div>
@@ -91,11 +89,13 @@
                 menu.classList.toggle('open');
                 if(menuList.style.display == "block") {
                     menuList.style.display = "none";
-                    title.src = "images/designhumanist-emblem-default.svg"
+                    title.style.filter = "invert(0)";
+                    //title.src = "images/designhumanist-emblem-default.svg"
                 }
                 else {
                     menuList.style.display = "block"
-                    title.src = "images/designhumanist-emblem-black.svg"
+                    title.style.filter = "invert(1)";
+                    //title.src = "images/designhumanist-emblem-black.svg"
                 }
             }
 
