@@ -11,38 +11,63 @@ body {
 
 .l-wrap {
   max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.grid-item {
-  width: 93.5px;
-  margin-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  float: left; }
+  margin-right: 4.21%;
+  margin-left: 4.21%; }
+  .l-wrap::after {
+    content: "";
+    clear: left;
+    display: block; }
+  @media (min-width: 1200px) {
+    .l-wrap {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .l-main-content::after {
   content: "";
   clear: left;
   display: block; }
-.l-main-content .l-one {
-  width: 12.5%;
-  margin-top: 24px;
+.l-main-content .l-menu {
+  width: 37.5%;
+  float: left; }
+  @media (min-width: 700px) {
+    .l-main-content .l-menu {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 1200px) {
+    .l-main-content .l-menu {
+      width: 12.5%;
+      margin-left: 12.5%; } }
+.l-main-content .l-title {
+  width: 62.5%;
+  float: right; }
+  @media (min-width: 700px) {
+    .l-main-content .l-title {
+      width: 37.5%; } }
+  @media (min-width: 1200px) {
+    .l-main-content .l-title {
+      width: 25%; } }
+.l-main-content .l-content {
+  width: 100%;
   padding-left: 24px;
   padding-right: 24px;
-  float: left; }
-.l-main-content .l-two {
-  width: 25%;
-  margin-top: 24px;
-  padding-right: 24px;
-  padding-left: 24px;
-  float: left; }
-.l-main-content .l-four {
-  width: 50%;
-  margin-top: 24px;
-  padding-right: 24px;
-  padding-left: 24px;
-  float: left; }
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px; }
+  @media (min-width: 700px) {
+    .l-main-content .l-content {
+      width: 75%;
+      margin-top: 25%;
+      font-size: 48px;
+      line-height: 64px; } }
+  @media (min-width: 1200px) {
+    .l-main-content .l-content {
+      width: 50%;
+      margin-top: 12.5%;
+      font-size: 48px;
+      line-height: 64px;
+      margin-left: 25%;
+      margin-right: 25%; } }
 
 .menu {
   width: 3em;

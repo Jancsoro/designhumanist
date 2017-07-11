@@ -14,16 +14,19 @@ body {
 
 .l-wrap {
   max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  margin-right: 4.21%;
+  margin-left: 4.21%;
 
-.grid-item {
-  width: 93.5px;
-  margin-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  float: left;
+  &::after {
+    content: "";
+    clear: left;
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 .l-main-content {
@@ -34,28 +37,62 @@ body {
     display: block;
   }
 
-  .l-one {
-    width: percentage(1/8);
-    margin-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+  .l-menu {
+    width: percentage(3/8);
     float: left;
+
+    @media (min-width: 700px) {
+      width: percentage(4/8);
+      float: left;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(1/8);
+      margin-left: percentage(1/8);
+    }
   }
-  .l-two {
-    width: percentage(2/8);
-    margin-top: 24px;
-    padding-right: 24px;
-    padding-left: 24px;
-    float: left;
+
+  .l-title {
+    width: percentage(5/8);
+    float: right;
+
+    @media (min-width: 700px) {
+      width: percentage(3/8);
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(2/8);
+    }
   }
-  .l-four {
-    width: percentage(4/8);
-    margin-top: 24px;
-    padding-right: 24px;
+
+  .l-content {
+    width: 100%;
     padding-left: 24px;
-    float: left;
+    padding-right: 24px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+
+    @media (min-width: 700px) {
+      width: percentage(6/8);
+      margin-top: 25%;
+      font-size: 48px;
+      line-height: 64px;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(4/8);
+      margin-top: 12.5%;
+      font-size: 48px;
+      line-height: 64px;
+      margin-left: percentage(2/8);
+      margin-right: percentage(2/8);
+    }
   }
 }
+
+
 ////////  MENU  \\\\\\\\
 
 // background color (square)

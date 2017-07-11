@@ -1,28 +1,42 @@
+@font-face {
+  font-family: 'SuisseIntl Semi-Bold';
+  src: url('SuisseIntl-SemiBold.otf'); /* IE9 Compat Modes */
+  src: url('SuisseIntl-SemiBold.otf') format('opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+    font-family: 'Verdana Pro Bold';
+    src: url('Verdana Pro Bold.otf');
+    src: url('Verdana Pro Bold.otf') format('opentype');
+}
+
 h1 {
-    font-family: "Verdana Pro Regular";
-    color: #202020;
+    font-family: "SuisseIntl Semi-Bold", Helvetica, sans-serif;
     font-size: 48px;
     line-height: 64px;
+    font-weight: normal;
+    color: #202020;
     text-align: center;
     vertical-align: middle;
 }
 
-h2 {
-    font-family: "Verdana Pro Bold";
-    font-weight: bold;
-    color: #202020;
+.cta-button {
     text-align: center;
-    line-height: 50px;
-    vertical-align: middle;
     background-color: #FFFF00;
-    height: 50px;
+    height: 60px;
+    vertical-align: middle
 }
 
 body {
     color: #202020;
-    font-family: "New Rail Alphabet";
+    font-family: "Verdana Pro Bold";
+    font-size: 18px;
+    line-height: 32px;
 }
-
+img.logo {
+    width: 3em;
+    height: 3em;
+}
 .title {
     vertical-align: middle;
     text-align: center;
@@ -30,9 +44,8 @@ body {
     z-index: 15;
 }
 
-.title p {
-    line-height: 48px;
-    margin: 0;
+.l-content.content {
+    margin-top: 6.25%;
 }
 
 a {
@@ -43,6 +56,8 @@ p {
     line-height: 32px;
     font-weight: 500;
     text-align: center;
+    font-family: "New Rail Alphabet";
+    font-size: 14px;
 }
 
 .grid-inner {
@@ -77,12 +92,12 @@ p {
 
 .menu-list {
     list-style-type: none;
-    margin-top: 25%;
 }
 
 .menu-item {
     text-align: center;
-    margin: 24px;
+    margin: auto;
+    margin-top: 24px;
 }
 
 .menu-item:hover {
@@ -90,8 +105,7 @@ p {
 }
 
 .menu-item a {
-    font-family: "Verdana Pro Regular";
-    font-size: 48px;
+    font-family: "SuisseIntl Semi-Bold";
     color: white;
     margin: 24px;
 }
