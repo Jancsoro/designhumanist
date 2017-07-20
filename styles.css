@@ -10,6 +10,12 @@
     src: url('Verdana Pro Regular.otf') format('opentype');
 }
 
+.emoji {
+    font-size: 128px;
+    line-height: 128px;
+    text-align: center;
+}
+
 h1 {
     font-family: "SuisseIntl Semi-Bold", Helvetica, sans-serif;
     font-size: 48px;

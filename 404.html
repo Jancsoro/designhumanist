@@ -1,0 +1,104 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>design humanist</title>
+        <link rel="con" href="images/designhumanist-favicon.svg"/>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="boba-grid.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <link href="https://fonts.googleapis.com/css?family=verdana :300,400,600,700,800" rel="stylesheet"> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="l-wrap">
+            <div class="l-main-content">
+                <div class="l-wrap">
+                <div class="l-menu">
+                    <div class="menu">
+                        <div class="bit-1"></div>
+                        <div class="bit-2"></div>
+                        <div class="bit-3"></div>
+                    </div>
+                </div>
+                <div class="l-title">
+                    <div class="title">
+                        <img class="logo" src="images/designhumanist-emblem-default.svg">
+                    </div>
+                </div>
+                </div>
+                <div>
+                <div class="l-content content">
+                    <div class="emoji">🙈 🙊 🙉<div>
+                    <h1>
+                        Sadly, the page you are looking for does not exist!
+                    </h1>
+                    <p>
+                        You can always use the menu to navigate back.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="l-menu-opened l-main-content">
+            <div class="l-content">
+                <ol class="menu-list">
+                    <li class="menu-item">
+                        <a href="mailto:hello@designhumanist.com" target="_blank">E-mail</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="http://www.behance.net/designhumanist" target="_blank">Works</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="http://blog.designhumanist.com" target="_blank">Blog</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <script name="tabBarChanger">
+    	$(function() {
+			// Get page title
+  			var pageTitle = $("title").text();
+
+			// Change page title on blur
+			$(window).blur(function() {
+	 			 $("title").text("Can we help? | design humanist");
+			});
+
+			// Change page title back on focus
+			$(window).focus(function() {
+	  			$("title").text(pageTitle);
+			});
+    	});
+    	</script>
+        <script name="menu-button">
+            var menu = document.querySelector('.menu');
+            var menuList = document.querySelector('.l-menu-opened');
+            var title =document.querySelector('.logo');
+
+            function toggleMenu () {
+                menu.classList.toggle('open');
+                if(menuList.style.display == "block") {
+                    menuList.style.display = "none";
+                    title.style.filter = "invert(0)";
+                    //title.src = "images/designhumanist-emblem-default.svg"
+                }
+                else {
+                    menuList.style.display = "block"
+                    title.style.filter = "invert(1)";
+                    //title.src = "images/designhumanist-emblem-black.svg"
+                }
+            }
+
+        menu.addEventListener('click', toggleMenu);
+        </script>
+    </body>
+</html>
